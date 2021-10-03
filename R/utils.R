@@ -1,7 +1,26 @@
 
+to_parse <- function(to, ext = NULL){
+  if(is.null(ext)) stop("need a default extension")
+  # if given a path leave it as is, if not, add ext from name
+  to <- to %||% rename_to_ext(to, "pdf")
+  # if path given is a folder, prepend the path and keep the same filename
+  if(is_folder(to)){
+    if(!dir.exists(to)) dir.create(to)
+    to <- file.path(to, basename(rename_to_ext(to, "pdf")))
+  }
+  to
+}
+
 
 turn_sys <- function(file){
   system.file(file, package = "turn")
+}
+
+validate_ext <- function(path, ext = NULL){
+  if(is.null(ext))
+    stop("Need a target extension")
+  if(tools::file_ext(path) != ext)
+    stop("File ext different from required ext: ", ext)
 }
 
 rename_to_ext <- function(path, ext, full_path = FALSE){
@@ -29,7 +48,7 @@ is.empty <- function(x){
   !as.logical(length(x))
 }
 
-is_path <- function(x){
+is_folder <- function(x){
   tools::file_path_sans_ext(x) == x
 }
 

@@ -1,24 +1,27 @@
 Package: turn
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Juan Pablo",
+           family = "Marin Diaz",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "jpmarindiaz@gmail.com")
+Maintainer: Juan Pablo Marin Diaz <jpmarindiaz@gmail.com>
+Description: Convert files in multiple format
+URL: https://github.com/datasketch/turn
+BugReports: https://github.com/datasketch/turn/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
+VignetteBuilder: knitr
 RoxygenNote: 7.1.2
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Depends: 
-    R (>= 2.10),
+    R (>= 3.1),
     magick
 Imports: 
     pdftools,
-    tesseract,
+    tesseract

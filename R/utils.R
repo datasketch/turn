@@ -2,11 +2,11 @@
 to_parse <- function(to, ext = NULL){
   if(is.null(ext)) stop("need a default extension")
   # if given a path leave it as is, if not, add ext from name
-  to <- to %||% rename_to_ext(to, "pdf")
+  to <- to %||% rename_to_ext(to, ext)
   # if path given is a folder, prepend the path and keep the same filename
   if(is_folder(to)){
     if(!dir.exists(to)) dir.create(to)
-    to <- file.path(to, basename(rename_to_ext(to, "pdf")))
+    to <- file.path(to, basename(rename_to_ext(to, ext)))
   }
   to
 }

@@ -26,13 +26,21 @@ images_into_pdf <- function(path, to = NULL){
   to
 }
 
+
 #' @export
-image_into_image <- function(path, ext, to = NULL){
+image_read <- function(path){
   if(tools::file_ext(path) %in% c("png", "jpg", "jpeg")){
     img <- magick::image_read(path)
   } else if(tools::file_ext(path) == "svg"){
     img <- magick::image_read_svg(path)
   }
+  img
+}
+
+
+#' @export
+image_into_image <- function(path, ext, to = NULL){
+  img <- image_read(path)
   img <- image_convert(img, format = ext)
   to <- to_parse(to, ext = ext)
   image_write(img, to)

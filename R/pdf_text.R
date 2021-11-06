@@ -1,6 +1,18 @@
 
 
 #' @export
+pdf_into_txt <- function(path, to){
+  validate_ext(path, ext = "pdf")
+  to <- to_parse(to, ext = "txt")
+  v <- pdf_into_text_vector(path)
+  #v <- paste0(v, collapse = "\n\n")
+  readr::write_lines(v, to)
+  to
+}
+
+
+
+#' @export
 pdf_text_into_csv <- function(path, to = ""){
   # type... document or table
   validate_ext(path, ext = "pdf")

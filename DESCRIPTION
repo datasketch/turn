@@ -23,5 +23,6 @@ Depends:
     R (>= 3.1),
     magick
 Imports: 
+    readxl,
     pdftools,
     tesseract

@@ -24,13 +24,20 @@ txt_into_xlsx <- function(path, to){
 #' @export
 table_read <- function(path){
   d <- NULL
-  if(tools::file_ext(path) %in% c("csv","txt","tsv")){
+  ext <- tools::file_ext(path)
+  if(ext %in% c("csv","txt","tsv")){
     delim <- guess_delimiter(path)
     d <- readr::read_delim(path, delim = delim, show_col_types = FALSE)
   }
-  if(tools::file_ext(path) %in% c("xlsx")){
-    d <- readxl::read_xlsx(path)
+  if(ext %in% c("xls","xlsx")){
+    d <- readxl::read_excel(path)
   }
+  if(ext %in% "ods"){
+    d <- readODS::read_ods(path)
+  }
+
+  if(is.null(d))
+    stop("Format not supported")
   # if(tools::file_ext(path) %in% c("sql")){
   #   stop("xlsx not supported yet")
   # }
@@ -52,7 +59,7 @@ tables_read <- function(path){
 
 
 #' @export
-table_write <- function(d, to, format = NULL){
+table_write <- function(d, to, format = NULL, ...){
   if(is.null(format) & nchar(tools::file_ext(to)) == 0){
     stop("Need format or extension in to argument")
   }else if(is.null(format)){
@@ -60,7 +67,14 @@ table_write <- function(d, to, format = NULL){
   }
   if(format == "csv"){
     to <- to_parse(to, ext = "csv")
-    write_csv(d, to)
+    readr::write_csv(d, to)
+  }else if(format == "csv.gz"){
+    to <- to_parse(to, ext = "csv.gz")
+    readr::write_csv(d, to)
+  }
+  else if(format == "json"){
+    to <- to_parse(to, ext = "json")
+    jsonlite::write_json(d, to, auto_unbox = TRUE, ...)
   }else if(format == "xlsx"){
     to <- to_parse(to, ext = "xlsx")
     wb <- openxlsx::createWorkbook()

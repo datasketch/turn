@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Rutas caminables en el barrio Quinta Camacho y sectores aledaños en Chapinero</name>
+    <description/>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-C2185B-normal">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-C2185B-highlight">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-C2185B">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-C2185B-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-C2185B-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-C2185B-nodesc-normal">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-C2185B-nodesc-highlight">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-C2185B-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-C2185B-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-C2185B-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FF5252-nodesc-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FF5252-nodesc-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-FF5252-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FF5252-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FF5252-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFD600-nodesc-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FFD600-nodesc-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFD600-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFD600-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFD600-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-097138-3906-normal">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>3.906</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-097138-3906-highlight">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>5.859</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-097138-3906">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-097138-3906-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-097138-3906-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-097138-4488-normal">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>4.488</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-097138-4488-highlight">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>6.732</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-097138-4488">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-097138-4488-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-097138-4488-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-097138-4681-normal">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>4.681</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-097138-4681-highlight">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>7.0215</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-097138-4681">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-097138-4681-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-097138-4681-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-097138-5069-normal">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>5.069</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-097138-5069-highlight">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>7.6035</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-097138-5069">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-097138-5069-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-097138-5069-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-7CB342-4294-normal">
+      <LineStyle>
+        <color>ff42b37c</color>
+        <width>4.294</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-7CB342-4294-highlight">
+      <LineStyle>
+        <color>ff42b37c</color>
+        <width>6.441</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-7CB342-4294">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-7CB342-4294-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-7CB342-4294-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-A52714-4100-normal">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>4.1</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-A52714-4100-highlight">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>6.15</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-A52714-4100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-A52714-4100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-A52714-4100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-A52714-4681-nodesc-normal">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>4.681</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-A52714-4681-nodesc-highlight">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>7.0215</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-A52714-4681-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-A52714-4681-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-A52714-4681-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FF5252-3713-normal">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>3.713</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-FF5252-3713-highlight">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>5.5695</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-FF5252-3713">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FF5252-3713-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FF5252-3713-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FF5252-4100-nodesc-normal">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>4.1</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FF5252-4100-nodesc-highlight">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>6.15</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FF5252-4100-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FF5252-4100-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FF5252-4100-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FF5252-4488-normal">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>4.488</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-FF5252-4488-highlight">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>6.732</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-FF5252-4488">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FF5252-4488-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FF5252-4488-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Capa sin título</name>
+      <Placemark>
+        <name>Inicio o acceso norte de la ruta Chapinero Alto</name>
+        <description>La ruta discurre por el sector de Rosales, Chapinero alto, para concluir en el sector aledaño a Sucre; o visceversa. Es un recorrido agradable por su cercanía a los Cerros Orientales y las vistas de la ciudad. Así como por sus andenes arborizados interconectados con parques. La permanencia de casas quintas y otros hitos arquitectónicos, así como la variada oferta cultural, compuesta por galerías. tiendas de diseño, librerías y restaurantes, que se encuentran en el transcurso de la ruta o en las cercanías de su trazado. Es de resaltar que pasa cerca a los ingresos de los senderos ecológicos de las quebradas la Vieja y las Delicias. Tiempo total estimado de la ruta 1:00 - 1:30 min /Ascensos y descensos, predominando descensos.</description>
+        <styleUrl>#icon-1899-C2185B</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0540446,4.6512199,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Primera etapa, transito de Rosales a Chapinero alto</name>
+        <description>Se ingresa por el parque Uribe Botero. Arriba del cual es posible contemplar una vista panorámica de la ciudad. Y girando se encuentra la figura imponente del convento de Santo Domingo, integrándose con su figura a los Cerros de Bogotá. Para avanzar luego al barrio autoconstruido Juan XXIII, a cuya construcción particular, sobre una colina es posible acceder gracias al operador turístico Tissus, el mismo que realiza visitas de guíanza a la quebrada las Delicias. Tiempo estimado 15-20 min / Ascenso y descenso.</description>
+        <styleUrl>#line-097138-3906</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0539159,4.6512734,0
+            -74.0526391,4.6510167,0
+            -74.0523924,4.650835,0
+            -74.0526391,4.6506425,0
+            -74.0524353,4.6505676,0
+            -74.0536369,4.647798,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Tissus turismo comunitario</name>
+        <description>https://www.instagram.com/tissusturismocomunitario/?hl=en</description>
+        <styleUrl>#icon-1899-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0536369,4.647798,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Segunda etapa, transito a Chapinero alto</name>
+        <description>Tiene como atractivo, hacia el final, el acceso a la quebrada las Delicias. Tiempo estimado 10 min / Descenso y plano.</description>
+        <styleUrl>#line-097138-4681</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0536369,4.647798,0
+            -74.0544765,4.6476733,0
+            -74.0548305,4.6472936,0
+            -74.0551953,4.6464809,0
+            -74.0565203,4.647438,0
+            -74.0577756,4.6455934,0
+            -74.0570192,4.6450854,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Punto de acceso a la quebrada las Delicias</name>
+        <description>https://www.facebook.com/QuebradaDelicias/?locale=es_LA</description>
+        <styleUrl>#icon-1899-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0569387,4.6450213,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tercera etapa</name>
+        <description>Tiene como atractivo principal el parque de la Salle y la iglesia Nuestra Señora de la Estrella, que resalta por sus vitrales y su bóveda parabólica. Así como el parque Portugal, alrededor de cual se aglomeran restaurantes y tiendas de diseño. Tiempo estimado: 15 min / descenso y plano </description>
+        <styleUrl>#line-097138-5069</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0575876,4.6454341,0
+            -74.057829,4.6451668,0
+            -74.0592023,4.6454662,0
+            -74.0598246,4.6458084,0
+            -74.0604898,4.6445893,0
+            -74.0602377,4.644354,0
+            -74.060463,4.6436536,0
+            -74.0605327,4.6428676,0
+            -74.0600392,4.6427553,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Cuarta etapa</name>
+        <description>Tiene como atractivo subir a lo alto de la Parroquia de San Francisco de Paula, la cual también tiene un mirador privilegiado de la ciudad. Tiempo estimado 10 min / Ascenso.</description>
+        <styleUrl>#line-097138-4488</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0600392,4.6427553,0
+            -74.0597453,4.6433855,0
+            -74.0589675,4.6434122,0
+            -74.0588924,4.6432572,0
+            -74.0594449,4.6426209,0
+            -74.0596487,4.6419098,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Parroquia San Francisco de Paula - Chapinero - Bogotá</name>
+        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0594968,4.6420574,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Iglesia Nuestra Señora de La Estrella</name>
+        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0601107,4.6445292,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque Universidad La Salle</name>
+        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0602018,4.6448442,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Quinta etapa</name>
+        <description>Tiene como la contemplación de la arquitectura del sector. Las tiendas de diseño y restaurantes, y las alamedas y parques que hacen de su transito un momento grato. Concluye en el Parque los Cerezos, en donde resalta una obra escultórica en bajo relieve con mosaicos. Tiempo estimado 10 min / Descenso y plano.</description>
+        <styleUrl>#line-097138-5069</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0596487,4.6419098,0
+            -74.0599089,4.6411729,0
+            -74.0603031,4.6416835,0
+            -74.0605928,4.6406676,0
+            -74.0607001,4.6389165,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Sexta etapa o extensión de la ruta Chapinero alto</name>
+        <description>El recorrido bien puede terminar en el parque los Cerezos, pero si la intención de los caminantes es continuar o acercarse al sector de sucre o Palermo, esta ruta es atractiva por la arquitectura de las casas quintas a su paso. Tiendas de diseño y galerías que la rodean. Concluye en la librería la Valija de fuego, importante centro cultural de Chapinero. Tiempo estimado 15-20 min / Descenso.</description>
+        <styleUrl>#line-7CB342-4294</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0606869,4.6388787,0
+            -74.0605957,4.6388172,0
+            -74.0618698,4.6368229,0
+            -74.062417,4.6355369,0
+            -74.0632994,4.6343205,0
+            -74.0634764,4.6336522,0
+            -74.0637527,4.6336575,0
+            -74.0638734,4.6321203,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Convento Santo Domingo de Guzman</name>
+        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0527523,4.6496518,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inicio o acceso norte de la ruta Quinta Camacho</name>
+        <description>Tiempo estimado 50 -60 min / Desplazamiento en terreno plano</description>
+        <styleUrl>#icon-1899-C2185B</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0582436,4.6570804,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Variante de conexión ruta Chapinero alto / ingreso a quebrada la Vieja</name>
+        <styleUrl>#line-FF5252-4100-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0550666,4.6518569,0
+            -74.0539931,4.6512311,0
+            -74.0539394,4.651338,0
+            -74.052609,4.6510814,0
+            -74.0524642,4.6513754,0
+            -74.0525286,4.6517978,0
+            -74.0522925,4.6521186,0
+            -74.0519492,4.6522844,0
+            -74.0517883,4.6524341,0
+            -74.051681,4.6523539,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Casa Hoffmann</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0524069,4.6518639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Castillo Del Mono Osorio</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0514634,4.6555449,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Extensión de la ruta Quinta Camacho hacia Chapinero central - Acceso carrera 11; ruta circular</name>
+        <description>Tiempo estimado 40 - 50 min / Desplazamiento en terreno plano</description>
+        <styleUrl>#icon-1899-C2185B</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0607348,4.6521526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Extensión de la ruta Quinta Camacho hacia Chapinero central - acceso carrera 9; ruta circular</name>
+        <description>Tiempo estimado 40 - 50 min / Desplazamiento en terreno plano</description>
+        <styleUrl>#icon-1899-C2185B</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0585129,4.650724,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Extremo sur de la extensión de la ruta circular por Chapinero central</name>
+        <description>Parque de los Hippies</description>
+        <styleUrl>#icon-1899-C2185B</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0622695,4.6457932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Extensión ruta Quinta Camacho / Ruta circular por Chapinero central</name>
+        <description>Tiempo estimado 40 - 50 min / Desplazamiento en terreno plano</description>
+        <styleUrl>#line-FF5252-3713</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0607425,4.6521911,0
+            -74.0614667,4.652651,0
+            -74.062797,4.6497691,0
+            -74.0628078,4.6494055,0
+            -74.0623732,4.6492879,0
+            -74.0625717,4.648534,0
+            -74.0627809,4.64855,0
+            -74.0621748,4.6482506,0
+            -74.0631189,4.6464541,0
+            -74.0622069,4.6459729,0
+            -74.0611609,4.6477587,0
+            -74.0613915,4.6480634,0
+            -74.0609463,4.648534,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Extensión ruta Quinta Camacho / Ruta circular por Chapinero central</name>
+        <description>Tiempo estimado 40 - 50 min / Desplazamiento en terreno plano</description>
+        <styleUrl>#line-FF5252-4488</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0609463,4.648534,0
+            -74.0592347,4.6512536,0
+            -74.0585129,4.650724,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Ruta Quinta Camacho</name>
+        <styleUrl>#line-A52714-4681-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0582436,4.6570804,0
+            -74.058435,4.656799,0
+            -74.0579307,4.6564248,0
+            -74.0584833,4.655719,0
+            -74.0587837,4.655858,0
+            -74.0588427,4.6557671,0
+            -74.0587729,4.655703,0
+            -74.0588373,4.6556174,0
+            -74.0590358,4.6557404,0
+            -74.0589875,4.6558313,0
+            -74.0589124,4.6558099,0
+            -74.0588266,4.655997,0
+            -74.0592611,4.6563232,0
+            -74.0594113,4.6564301,0
+            -74.0595239,4.6562857,0
+            -74.0604627,4.6569113,0
+            -74.0612513,4.6556869,0
+            -74.0608543,4.6554142,0
+            -74.0615088,4.6545855,0
+            -74.0618575,4.654377,0
+            -74.061954,4.654254,0
+            -74.0619487,4.6538263,0
+            -74.0626943,4.6540722,0
+            -74.0627426,4.6536231,0
+            -74.0608382,4.6524949,0
+            -74.0606397,4.6528211,0
+            -74.0607148,4.6529173,0
+            -74.059996,4.6540455,0
+            -74.0588802,4.6533771,0
+            -74.0592557,4.6527248,0
+            -74.0587139,4.6522543,0
+            -74.0578342,4.653452,0
+            -74.0573406,4.6531579,0
+            -74.0581721,4.6518961,0
+            -74.0582311,4.6517838,0
+            -74.0576786,4.6513988,0
+            -74.0584296,4.6506824,0
+            -74.0575659,4.6502012,0
+            -74.0568203,4.6501423,0
+            -74.0562731,4.6508,0
+            -74.0557689,4.6508642,0
+            -74.0555006,4.651201,0
+            -74.0550768,4.6519121,0
+            -74.0539932,4.6536819,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Ruta Quinta Camacho</name>
+        <description>La ruta por Quinta Camacho inicia en la plazoleta de la Porciuncula y termina en el Parque Italia, espacios centrales y referenciales del sector. En su trazado pasa por los accesos a la ruta circular por Chapinero central, y al acceso a la ruta Chapinero alto. El recorrido privilegia el disfrute de caminar, de experimentar y explorar el sector. Pasando, o acercandose en su trazado, por los espacios culturales aportados por Datasketch o por la base de datos de Es cultura local. Así como por referentes patrimoniales de distinto ámbito, observables desde el espacio público. El sector de Quinta Camacho tiene una amplia oferta cultural, dentro de la que destacan las tiendas de diseño, galerias, librerías, centros culturales, bares y restaurantes. Un patrimonio cultural amplio y variado, dentro del cual destaca la arquitectura de las casas inglesas del sector, casas quintas y palacetes. Ademas de numerosos monumentos y detalles ornamentales. El barrio se caracteriza por la presencia de varios parques y plazoletas, interconectados por vias arboladas, que lo hacen atractivo como lugar de encuentro y pasatiempo de los que por allí pasan. Estos espacios verdes albergan individuos arboreos notables y especies de avifauna diversas, dada la cercania y conectividad de este sector con los Cerros Orientales. Tiempo estimado 50-60 min / Desplazamiento en terreno plano.</description>
+        <styleUrl>#line-A52714-4100</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -74.0539932,4.6536819,0
+            -74.0552963,4.6546023,0
+            -74.0560581,4.6551155,0
+            -74.0557576,4.6546985,0
+            -74.0559508,4.6545274,0
+            -74.0559347,4.6540302,0
+            -74.0562297,4.6535917,0
+            -74.0578981,4.6545167,0
+            -74.0592338,4.6552706,0
+            -74.0596147,4.6547038,0
+            -74.0598936,4.6548642,0
+            -74.0599365,4.6548108,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Final o acceso sur de la ruta Quinta Camacho</name>
+        <description>Tiempo estimado 50 -60 min / Desplazamiento en terreno plano</description>
+        <styleUrl>#icon-1899-C2185B</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0598936,4.6548642,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Finalización o acceso sur de la extensión a la ruta Chapinero alto</name>
+        <description>La ruta discurre por el sector de Rosales, Chapinero alto, para concluir en el sector aledaño a Sucre; o visceversa. Es un recorrido agradable por su cercanía a los Cerros Orientales y las vistas de la ciudad. Así como por sus andenes arborizados interconectados con parques. La permanencia de casas quintas y otros hitos arquitectónicos, así como la variada oferta cultural, compuesta por galerías. tiendas de diseño, librerías y restaurantes, que se encuentran en el transcurso de la ruta o en las cercanías de su trazado. Es de resaltar que pasa cerca a los ingresos de los senderos ecológicos de las quebradas la Vieja y las Delicias. Tiempo total estimado de la ruta 1:00 - 1:30 min /Ascensos y descensos, predominando ascensos en el sentido sur norte.</description>
+        <styleUrl>#icon-1899-C2185B</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0638734,4.6321203,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Final o acceso norte de la ruta Chapinero alto</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0607001,4.6389165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Distrito ARCU</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0618491,4.6547775,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ARTE Y HOBBY</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0607905,4.6569766,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Teatro Hilos Mágicos</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0606003,4.6572227,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nueva Acrópolis</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0603195,4.6560949,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Charlot Teatro</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0585907,4.6549171,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Museo Casa Lleras</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0563698,4.6535453,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Galería Casas Riegner</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0567832,4.6537229,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CASA CANO</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0578666,4.6524912,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Restaurante Circo Colombia</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0624581,4.6534989,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Teatro Nacional Calle 71</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.058592,4.6557,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Datasketch Store</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0590079,4.6557112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Librería Wilborada 1047</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0589199,4.655821,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centro Cultural COLOMBO CHINO</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0599616,4.6567203,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San librario </name>
+        <description>Librería; libros leidos</description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0615952,4.6561873,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Quevedo Libros y Antiguedades</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0611062,4.6530928,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Matik Matik</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0611648,4.6529655,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NADA</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0604269,4.6536104,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Casa Arsenal</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0576112,4.6504722,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tornamesa Zona G</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0553876,4.6519075,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Villa Adelaida</name>
+        <description>Espacio patrimonial y de exposiciones temporales</description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0561011,4.6531631,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Galería Nueveochenta Arte Contemporáneo</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0623134,4.6545962,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Teatro R101</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0602241,4.6557982,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Galería Otros 360º</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0583053,4.6548945,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Casa Invictos</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0620292,4.6542998,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Casa Híbridos</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0593545,4.6533907,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Danceholic Project Dance Studio</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0653839,4.6441113,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Traque Sas</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0682426,4.6417396,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>panoramica soundworks</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0667991,4.6318408,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>tuToque.co</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0602462,4.6382642,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cra. 9 #65-76</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0601946,4.6507635,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CODISMAT SAS</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0225677,4.6714029,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arkedata Ltda</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0528792,4.6559207,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El salmón editores</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0785782,4.6937929,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cra. 3 Este #101-29</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0237121,4.6744923,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Papa Eddi Ediciones</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.054552,4.671243,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cra. 11a #96-51</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0456679,4.6804206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Artestudio: Espacio Cultural</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0630613,4.6438447,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cl. 69 #10a-9</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0604557,4.6535715,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rey Naranjo Editores Sas</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0604657,4.6407322,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cra. 19a #104a-50</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0517286,4.6919815,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gravedad Cero Circo</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.066257,4.6372628,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cine Club El Muro</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0639719,4.6418061,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Teatro La Mama</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.061329,4.64879,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>tuToque.co</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0602462,4.6382642,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TEATRIDANZA, CIAT EL TEATRO DE LA MONTAÑA</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.0172406,4.6650093,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

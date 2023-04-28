@@ -10,7 +10,15 @@ test_that("tables", {
   #readr::spec(d)
   txt_into_xlsx(path, to = "tmp")
 
+})
 
+test_that("write tables work",{
+
+ path <- "tmp/sub"
+ d <- cars
+
+ table_write(d, to = path, format = "json")
+ table_write(d, to = path, format = "csv.gz")
 
 
 })

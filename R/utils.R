@@ -8,20 +8,6 @@ turn_sys <- function(file){
 
 
 
-which_ext <- function(x){
-  tools::file_ext(x)
-}
-
-remove_ext <- function(x){
-  tools::file_path_sans_ext(x)
-}
-
-change_ext <- function(x, ext){
-  paste0(tools::file_path_sans_ext(x), ".", ext)
-}
-
-
-
 
 
 `%||%` <- function (x, y){

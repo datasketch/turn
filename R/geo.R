@@ -16,7 +16,7 @@ kml_into_csv <- function(path, to = NULL, ...){
   if(!is_folder(to)) validate_ext(to, "csv")
 
   opts <- list(...)
-  filter_geometry <- opts$geometry
+  filter_geometry <- opts$geometry_type
 
   geo <- sf::st_read(path)
 
@@ -24,9 +24,14 @@ kml_into_csv <- function(path, to = NULL, ...){
     dplyr::mutate(
       lon = unlist(purrr::map(geo$geometry,1)),
       lat = unlist(purrr::map(geo$geometry,2)),
-      geometry_type = map_chr(geo$geometry, ~ class(.)[2])
+      geometry_type = purrr::map_chr(geo$geometry, ~ class(.)[2])
       )
   if(!is.null(filter_geometry)){
+    available_geometries <- unique(d$geometry_type)
+    if(!filter_geometry %in% available_geometries)
+      stop("geometry_type must be one of: ",
+           paste0(available_geometries,collapse = ", "))
+
     d <- d |>
       sf::st_drop_geometry() |>
       filter(geometry_type == "POINT")

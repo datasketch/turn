@@ -4,7 +4,7 @@ test_that("tables", {
 
   path <- turn_sys("table/grupos-biologicos.txt")
 
-  delim <- guess_delimiter(path)
+  #delim <- guess_delimiter(path)
 
   d <- table_read(path)
   #readr::spec(d)

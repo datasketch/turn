@@ -24,23 +24,62 @@ txt_into_xlsx <- function(path, to){
 #' @export
 table_read <- function(path){
   d <- NULL
+  ld <- NULL
   ext <- tools::file_ext(path)
+
   if(ext %in% c("csv","txt","tsv")){
-    delim <- guess_delimiter(path)
-    d <- readr::read_delim(path, delim = delim, show_col_types = FALSE)
-  }
-  if(ext %in% c("xls","xlsx")){
-    d <- readxl::read_excel(path)
-  }
-  if(ext %in% "ods"){
-    d <- readODS::read_ods(path)
+    encoding <- readr::guess_encoding(path)$encoding[1]
+    grouping_mark <- ","
+    decimal_mark <- "."
+    if(encoding == "ISO-8859-1"){
+      grouping_mark <- "."
+      decimal_mark <- ","
+    }
+    d <- vroom::vroom(path, show_col_types = FALSE,
+                      locale = readr::locale(encoding = encoding,
+                                             grouping_mark = grouping_mark,
+                                             decimal_mark = decimal_mark))
   }
 
-  if(is.null(d))
-    stop("Format not supported")
+
+
+
+  if(ext %in% c("xls","xlsx")){
+
+    sheets <- readxl::excel_sheets(path)
+    if(length(sheets > 1)){
+      ld <- purrr::map(sheets, ~ readxl::read_excel(path, sheet = .))
+      names(ld) <- sheets
+    }else{
+      d <- readxl::read_excel(path)
+    }
+  }
+  if(ext %in% "ods"){
+    if(length(sheets > 1)){
+      ld <- purrr::map(sheets, ~ readxl::read_excel(path, sheet = .))
+      ld <- purrr::map(ld, function(d){
+        d <- dstools::discard_all_empty_rows(d)
+        dstools::discard_all_empty_columns(d)
+      })
+    }else{
+      d <- readODS::read_ods(path)
+    }
+  }
+
+  # if(is.null(d))
+  #   stop("Format not supported")
+
   # if(tools::file_ext(path) %in% c("sql")){
   #   stop("xlsx not supported yet")
   # }
+
+  if(!is.null(d)){
+    d <- dstools::discard_all_empty_rows(d)
+    d <- dstools::discard_all_empty_columns(d)
+  }
+
+  if(!is.null(ld)) return(ld)
+
   d
 }
 
@@ -88,14 +127,14 @@ table_write <- function(d, to, format = NULL, ...){
 
 
 
-guess_delimiter <- function(path){
-  d <- readr::read_csv(path, n_max = 10, show_col_types = FALSE)
-  if(ncol(d) == 1 & all(grepl(".*;.*", d[[1]]))) #grepl(";.+;", d[[1]])
-    return(";")
-  if(ncol(d) == 1 &  all(grepl(".*\t.*", d[[1]]))) #grepl(";.+;", d[[1]])
-    return("\t")
-  if(ncol(d) > 1)
-    return(",")
-  NULL
-}
+# guess_delimiter <- function(path){
+#   d <- readr::read_csv(path, n_max = 10, show_col_types = FALSE)
+#   if(ncol(d) == 1 & all(grepl(".*;.*", d[[1]]))) #grepl(";.+;", d[[1]])
+#     return(";")
+#   if(ncol(d) == 1 &  all(grepl(".*\t.*", d[[1]]))) #grepl(";.+;", d[[1]])
+#     return("\t")
+#   if(ncol(d) > 1)
+#     return(",")
+#   NULL
+# }
 

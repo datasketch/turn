@@ -25,6 +25,7 @@ txt_into_xlsx <- function(path, to){
 table_read <- function(path){
   d <- NULL
   ld <- NULL
+
   ext <- tools::file_ext(path)
 
   if(ext %in% c("csv","txt","tsv")){
@@ -47,7 +48,7 @@ table_read <- function(path){
   if(ext %in% c("xls","xlsx")){
 
     sheets <- readxl::excel_sheets(path)
-    if(length(sheets > 1)){
+    if(length(sheets) > 1){
       ld <- purrr::map(sheets, ~ readxl::read_excel(path, sheet = .))
       names(ld) <- sheets
     }else{

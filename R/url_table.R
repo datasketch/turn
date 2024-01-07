@@ -57,7 +57,7 @@ read_public_googlesheet_tables <- function(url) {
     googlesheets4::read_sheet(url, sheet = sheet)
   }) |> purrr::set_names(tables)
 
-  class(d) <- c(class(ld), "turn_tables")
+  class(ld) <- c(class(ld), "turn_tables")
 
   ld
 }

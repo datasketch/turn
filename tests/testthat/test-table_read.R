@@ -61,8 +61,11 @@ test_that("File read works", {
 
 
 
+})
 
-
+test_that("Read from path", {
 
 
 })
+
+

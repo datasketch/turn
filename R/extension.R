@@ -2,11 +2,13 @@
 
 #' @export
 which_ext <- function(x){
-  tools::file_ext(x)
+  ext <- tools::file_ext(x)
+  if(length(ext) == 1 && nchar(ext) == 0) return(NULL)
+  ext
 }
 
 #' @export
-remove_ext <- function(x){
+sans_ext <- function(x){
   tools::file_path_sans_ext(x)
 }
 

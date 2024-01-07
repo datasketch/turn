@@ -29,6 +29,11 @@ url_into_table <- function(url){
 read_public_googlesheet_table <- function(url) {
 
   googlesheets4::gs4_deauth()
+
+  # To read the name of the spreadsheet
+  # Perhaps add atributes?
+  # spreadsheet <- googlesheets4::gs4_get(url)
+
   result <- tryCatch({
     # Attempt to read the sheet
     data <- googlesheets4::read_sheet(url)

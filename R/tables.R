@@ -22,89 +22,6 @@ txt_into_xlsx <- function(path, to){
 
 
 #' @export
-table_read <- function(path){
-  d <- NULL
-  ld <- NULL
-
-  ext <- tools::file_ext(path)
-
-  if(ext %in% c("csv","txt","tsv")){
-    encoding <- readr::guess_encoding(path)$encoding[1]
-    grouping_mark <- ","
-    decimal_mark <- "."
-    if(encoding == "ISO-8859-1"){
-      grouping_mark <- "."
-      decimal_mark <- ","
-    }
-    d <- vroom::vroom(path, show_col_types = FALSE,
-                      locale = readr::locale(encoding = encoding,
-                                             grouping_mark = grouping_mark,
-                                             decimal_mark = decimal_mark))
-  }
-
-  if( ext == "json"){
-    d <- jsonlite::read_json(path)
-  }
-
-  if(ext %in% c("xls","xlsx")){
-
-    sheets <- readxl::excel_sheets(path)
-    if(length(sheets) > 1){
-      ld <- purrr::map(sheets, ~ readxl::read_excel(path, sheet = .))
-      names(ld) <- sheets
-    }else{
-      d <- readxl::read_excel(path)
-    }
-  }
-  if(ext %in% "ods"){
-    if(length(sheets > 1)){
-      ld <- purrr::map(sheets, ~ readxl::read_excel(path, sheet = .))
-      ld <- purrr::map(ld, function(d){
-        d <- dstools::discard_all_empty_rows(d)
-        dstools::discard_all_empty_columns(d)
-      })
-    }else{
-      d <- readODS::read_ods(path)
-    }
-  }
-
-  # if(is.null(d))
-  #   stop("Format not supported")
-
-  # if(tools::file_ext(path) %in% c("sql")){
-  #   stop("xlsx not supported yet")
-  # }
-
-  if(!is.null(d)){
-    d <- dstools::discard_all_empty_rows(d)
-    d <- dstools::discard_all_empty_columns(d)
-  }
-
-  if(!is.null(ld)){
-    class(d) <- c(class(ld), "turn_tables")
-    return(ld)
-  }
-
-  class(d) <- c(class(d), "turn_table")
-
-  d
-}
-
-#' @export
-tables_read <- function(path){
-  d <- NULL
-
-  if(tools::file_ext(path) %in% c("xlsx")){
-    stop("xlsx not supported yet")
-  }
-  if(tools::file_ext(path) %in% c("sql")){
-    stop("xlsx not supported yet")
-  }
-  d
-}
-
-
-#' @export
 table_write <- function(d, to, format = NULL, ...){
 
   if(is_turn_tables(d) || is_list_of_data_frames(d)){
@@ -140,6 +57,7 @@ table_write <- function(d, to, format = NULL, ...){
 }
 
 tables_write <- function(ld, to, format = NULL, ...){
+
   if(!inherits(ld, "turn_tables")){
     if(!is_list_of_data_frames(ld)){
       stop("Must be a list tables")
@@ -148,6 +66,7 @@ tables_write <- function(ld, to, format = NULL, ...){
   if(is.null(names(ld))){
     names(ld) <- paste("Sheet", 1:length(l))
   }
+  to_init <- to
   nms <- names(ld)
 
   if(is.null(format) & nchar(tools::file_ext(to)) == 0){
@@ -158,13 +77,18 @@ tables_write <- function(ld, to, format = NULL, ...){
 
   if(format == "csv"){
     to <- to_parse(to, ext = "csv")
-    readr::write_csv(d, to)
+    lapply(seq_along(ld), function(i){
+      to <- append_sheet_to_path(to, nms[i])
+      readr::write_csv(ld[[i]], to)
+    })
+    to <- to_init
   }else if(format == "csv.gz"){
     to <- to_parse(to, ext = "csv.gz")
     lapply(seq_along(ld), function(i){
-      to <- paste0(to,nms[i])
+      to <- append_sheet_to_path(to, nms[i])
       readr::write_csv(ld[[i]], to)
     })
+    to <- to_init
   }
   else if(format == "json"){
     to <- to_parse(to, ext = "json")
@@ -193,6 +117,11 @@ is_list_of_data_frames <- function(l){
   all(unlist(lapply(l, is.data.frame)))
 }
 
+
+append_sheet_to_path <- function(to, append, sep = "___"){
+  paste0(sans_ext(to),sep, append,".", which_ext(to))
+
+}
 
 # guess_delimiter <- function(path){
 #   d <- readr::read_csv(path, n_max = 10, show_col_types = FALSE)

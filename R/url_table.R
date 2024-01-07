@@ -2,12 +2,13 @@
 #' @export
 url_into_table <- function(url){
 
-  if(!is_url){
+  if(!is_url(url)){
     stop("Must be a url")
   }
 
   if(is_google_sheet_url(url)){
-    d <- read_public_googlesheet_table(url)
+    d <- read_public_googlesheet_tables(url)
+    if(length(d) == 1) return(d[[1]])
     return(d)
   }
 
@@ -30,7 +31,7 @@ read_public_googlesheet_table <- function(url) {
   googlesheets4::gs4_deauth()
   result <- tryCatch({
     # Attempt to read the sheet
-    data <- read_sheet(url)
+    data <- googlesheets4::read_sheet(url)
     return(data)
   },
   error = function(e) {
@@ -85,6 +86,7 @@ github_to_raw_url <- function(url) {
   raw_url <- gsub("/blob/", "/", raw_url)
   raw_url
 }
+
 
 
 

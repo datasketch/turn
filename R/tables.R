@@ -42,8 +42,9 @@ table_read <- function(path){
                                              decimal_mark = decimal_mark))
   }
 
-
-
+  if( ext == "json"){
+    d <- jsonlite::read_json(path)
+  }
 
   if(ext %in% c("xls","xlsx")){
 

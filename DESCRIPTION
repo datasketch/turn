@@ -26,4 +26,5 @@ Imports:
     readxl,
     pdftools,
     tesseract,
-    readODS
+    readODS,
+    vroom

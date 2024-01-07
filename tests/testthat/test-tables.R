@@ -20,5 +20,14 @@ test_that("write tables work",{
  table_write(d, to = path, format = "json")
  table_write(d, to = path, format = "csv.gz")
 
+ path <- "tmp/googlesheets"
+
+ url <- "https://docs.google.com/spreadsheets/d/1lzMEFcq8k5gL7somEwN9ahuppw3Wp0YhgZpC1WAMFrw/edit?usp=sharing"
+ d <- url_into_table(url)
+ expect_true(class(d) == "turn_tables")
+
+ table_write(d, path, format = "xlsx")
+ table_write(d, path, format = "json", pretty = TRUE)
+
 
 })

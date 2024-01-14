@@ -11,20 +11,8 @@ table_read <- function(path){
   }
 
   if(ext %in% c("csv","txt","tsv")){
-    encoding <- readr::guess_encoding(path)$encoding[1]
-    grouping_mark <- ","
-    decimal_mark <- "."
-    if(encoding == "ISO-8859-1"){
-      grouping_mark <- "."
-      decimal_mark <- ","
-    }
-    d <- vroom::vroom(path, show_col_types = FALSE,
-                      locale = readr::locale(encoding = encoding,
-                                             grouping_mark = grouping_mark,
-                                             decimal_mark = decimal_mark))
-  }
-
-  if( ext == "json"){
+    d <- read_tabular(path)
+      } else if( ext == "json"){
     d <- jsonlite::read_json(path)
   }
 
@@ -35,15 +23,15 @@ table_read <- function(path){
   if(!is.null(d)){
     d <- dstools::discard_all_empty_rows(d)
     d <- dstools::discard_all_empty_columns(d)
+  }else{
+    stop("Could not read file")
   }
 
   if(!is.null(ld)){
-    class(d) <- c(class(ld), "turn_tables")
+    class(ld) <- c(class(ld), "turn_tables")
     return(ld)
   }
-
   class(d) <- c(class(d), "turn_table")
-
   d
 }
 

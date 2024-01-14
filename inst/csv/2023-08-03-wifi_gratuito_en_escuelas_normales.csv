@@ -1,0 +1,48 @@
+ID ,Colonia,Alcaldia,Latitud,Longitud,Puntos de Acceso,Programa
+NMA_ESEF_01,Magdalena Mixhuca,Iztacalco,19.406863,-99.100974,1,ESCUELAS_NORMALES 
+NMA_ESEF_02,Magdalena Mixhuca,Iztacalco,19.40754,-99.101288,2,ESCUELAS_NORMALES 
+NMA_ESEF_03,Magdalena Mixhuca,Iztacalco,19.408132,-99.098875,1,ESCUELAS_NORMALES 
+NMA_ESEF_04,Magdalena Mixhuca,Iztacalco,19.408069,-99.100101,1,ESCUELAS_NORMALES 
+NMA_ESEF_05,Magdalena Mixhuca,Iztacalco,19.40792,-99.100348,2,ESCUELAS_NORMALES 
+NMA_ESEF_06,Magdalena Mixhuca,Iztacalco,19.408107,-99.099587,1,ESCUELAS_NORMALES 
+NMA_ESEF_07,Magdalena Mixhuca,Iztacalco,19.407627,-99.098953,1,ESCUELAS_NORMALES 
+NMA_ESNE_01,"Polanco, Polanco II Sección",Miguel Hidalgo ,19.4307894,-99.2050955,1,ESCUELAS_NORMALES 
+NMA_ESNE_02,"Polanco, Polanco II Sección",Miguel Hidalgo ,19.4307894,-99.2050955,1,ESCUELAS_NORMALES 
+NMA_ESNE_03,"Polanco, Polanco II Sección",Miguel Hidalgo ,19.4307894,-99.2050955,1,ESCUELAS_NORMALES 
+NMA_ESNE_04,"Polanco, Polanco II Sección",Miguel Hidalgo ,19.4307894,-99.2050955,2,ESCUELAS_NORMALES 
+NMA_ESNE_05,"Polanco, Polanco II Sección",Miguel Hidalgo ,19.4307894,-99.2050955,2,ESCUELAS_NORMALES 
+NMA_ESNE_06,"Polanco, Polanco II Sección",Miguel Hidalgo ,19.4307894,-99.2050955,1,ESCUELAS_NORMALES 
+NMA_ESNE_07,"Polanco, Polanco II Sección",Miguel Hidalgo ,19.4307894,-99.2050955,1,ESCUELAS_NORMALES 
+NMA_ESNE_08,"Polanco, Polanco II Sección",Miguel Hidalgo ,19.4307894,-99.2050955,1,ESCUELAS_NORMALES 
+NMA_CAMCM_01,Colonia Santa María La Riberta,Cuauhtémoc,19.443459,-99.162268,2,ESCUELAS_NORMALES 
+NMA_CAMCM_02,Colonia Santa María La Riberta,Cuauhtémoc,19.443459,-99.162268,2,ESCUELAS_NORMALES 
+NMA_CAMCM_03,Colonia Santa María La Riberta,Cuauhtémoc,19.443459,-99.162268,1,ESCUELAS_NORMALES 
+NMA_CAMCM_04,Colonia Santa María La Riberta,Cuauhtémoc,19.443459,-99.162268,1,ESCUELAS_NORMALES 
+NMA_CAMCM_05,Colonia Santa María La Riberta,Cuauhtémoc,19.443459,-99.162268,1,ESCUELAS_NORMALES 
+NMA_CAMCM_06,Colonia Santa María La Riberta,Cuauhtémoc,19.443459,-99.162268,1,ESCUELAS_NORMALES 
+NMA_CAMCM_07,Colonia Santa María La Riberta,Cuauhtémoc,19.443459,-99.162268,1,ESCUELAS_NORMALES 
+NMA_CAMCM_08,Colonia Santa María La Riberta,Cuauhtémoc,19.443459,-99.162268,1,ESCUELAS_NORMALES 
+NMA_ESM_01,La Concepción,Coyoacán,19.34906,-99.159326,1,ESCUELAS_NORMALES 
+NMA_ESM_02,La Concepción,Coyoacán,19.349001,-99.158752,2,ESCUELAS_NORMALES 
+NMA_ESM_03,La Concepción,Coyoacán,19.349077,-99.158294,2,ESCUELAS_NORMALES 
+NMA_BENM_01,Un hogar para nosotros ,Miguel Hidalgo ,19.445877,-99.168092,2,ESCUELAS_NORMALES 
+NMA_BENM_02,Un hogar para nosotros ,Miguel Hidalgo ,19.445825,-99.167871,1,ESCUELAS_NORMALES 
+NMA_BENM_03,Un hogar para nosotros ,Miguel Hidalgo ,19.446882,-99.168601,1,ESCUELAS_NORMALES 
+NMA_BENM_04,Un hogar para nosotros ,Miguel Hidalgo ,19.447148,-99.167688,2,ESCUELAS_NORMALES 
+NMA_BENM_05,Un hogar para nosotros ,Miguel Hidalgo ,19.447701,-99.168214,2,ESCUELAS_NORMALES 
+NMA_BENM_06,Un hogar para nosotros ,Miguel Hidalgo ,19.447733,-99.168279,2,ESCUELAS_NORMALES 
+NMA_BENM_07,Un hogar para nosotros ,Miguel Hidalgo ,19.449077,-99.168866,1,ESCUELAS_NORMALES 
+NMA_BENM_08,Un hogar para nosotros ,Miguel Hidalgo ,19.44684,-99.169627,1,ESCUELAS_NORMALES 
+NMA_BENM_09,Un hogar para nosotros ,Miguel Hidalgo ,19.446526,-99.168556,1,ESCUELAS_NORMALES 
+NMA_BENM_10,Un hogar para nosotros ,Miguel Hidalgo ,19.446455,-99.168919,2,ESCUELAS_NORMALES 
+NMA_BENM_11,Un hogar para nosotros ,Miguel Hidalgo ,19.446044,-99.169028,1,ESCUELAS_NORMALES 
+NMA_BENM_12,Un hogar para nosotros ,Miguel Hidalgo ,19.44663,-99.168314,2,ESCUELAS_NORMALES 
+NMA_BENM_13,Un hogar para nosotros ,Miguel Hidalgo ,19.44699,-99.167387,2,ESCUELAS_NORMALES 
+NMA_BENM_14,Un hogar para nosotros ,Miguel Hidalgo ,19.446987,-99.167493,2,ESCUELAS_NORMALES 
+NMA_BENM_15,Un hogar para nosotros ,Miguel Hidalgo ,19.446858,-99.167579,2,ESCUELAS_NORMALES 
+NMA_BENM_16,Un hogar para nosotros ,Miguel Hidalgo ,19.446842,-99.167613,1,ESCUELAS_NORMALES 
+NMA_BENM_17,Un hogar para nosotros ,Miguel Hidalgo ,19.446716,-99.168018,2,ESCUELAS_NORMALES 
+NMA_BENM_18,Un hogar para nosotros ,Miguel Hidalgo ,19.44581,-99.167098,2,ESCUELAS_NORMALES 
+NMA_BENM_19,Un hogar para nosotros ,Miguel Hidalgo ,19.445755,-99.167694,2,ESCUELAS_NORMALES 
+NMA_BENM_20,Un hogar para nosotros ,Miguel Hidalgo ,19.445078,-99.16845,1,ESCUELAS_NORMALES 
+NMA_BENM_21,Un hogar para nosotros ,Miguel Hidalgo ,19.445052,-99.167137,2,ESCUELAS_NORMALES 

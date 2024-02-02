@@ -74,7 +74,7 @@ tables_read <- function(path){
   d
 }
 
-
+#' @export
 tables_read_folder <- function(path){
   if(!dir.exists(path)){
     stop("Path not found")

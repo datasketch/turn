@@ -22,7 +22,7 @@ test_that("Read from github", {
   expect_true(is_github_or_gist_url("https://gist.github.com/user/gist_id"))
   expect_false(is_github_or_gist_url("https://example.com")) # FALSE
 
-  url <- "https://github.com/datasketch/turn/blob/main/inst/table/grupos-biologicos.txt"
+  url <- "https://github.com/datasketch/turn/blob/main/inst/txt/grupos-biologicos.txt"
   d <- url_into_table(url)
   expect_true(nrow(d) > 10)
 

@@ -27,4 +27,7 @@ Imports:
     pdftools,
     tesseract,
     readODS,
-    vroom
+    vroom,
+    dstools (>= 0.1.2)
+Remotes:
+    datasketch/dstools

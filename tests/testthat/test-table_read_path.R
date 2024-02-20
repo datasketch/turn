@@ -18,6 +18,12 @@ test_that("Table read CSV", {
   d <- read_tabular(path)
   expect_true(is.data.frame(d))
 
+  path <- turn_sys("csv/encuesta_mujeres.csv")
+  d <- table_read(path)
+  expect_true(is.data.frame(d))
+
+
+
 })
 
 test_that("Read from folder", {

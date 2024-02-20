@@ -11,7 +11,7 @@ test_that("Test tabular", {
   expect_true(is.data.frame(d))
 
 
-  path <- turn_sys("csv/encuentas mujeres.csv")
+  path <- turn_sys("csv/encuesta_mujeres.csv")
   d <- read_tabular(path)
   expect_true(is.data.frame(d))
 

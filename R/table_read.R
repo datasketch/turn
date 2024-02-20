@@ -23,6 +23,11 @@ table_read <- function(path){
   if(!is.null(d)){
     d <- dstools::discard_all_empty_rows(d)
     d <- dstools::discard_all_empty_columns(d)
+    d |>
+      dplyr::select(which(apply(d, 2, function(x) !all(is.empty(x) | is.na(x)))))
+    empty_cols <- purrr::map_lgl(d, ~ all(is.na(.) | is.empty(.)))
+    d |> dplyr::select(which(!empty_cols))
+
   }else{
     stop("Could not read file")
   }

@@ -2,6 +2,7 @@
 "_PACKAGE"
 
 ## usethis namespace: start
-#' @importFrom dstools %||%
+#' @importFrom dstools %||% clean_names
+#' @import dplyr
 ## usethis namespace: end
 NULL

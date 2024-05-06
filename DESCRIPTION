@@ -28,6 +28,8 @@ Imports:
     tesseract,
     readODS,
     vroom,
-    dstools (>= 0.1.2)
+    dstools (>= 0.1.2),
+    duckdb,
+    DBI
 Remotes:
     datasketch/dstools

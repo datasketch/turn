@@ -134,3 +134,10 @@ append_sheet_to_path <- function(to, append, sep = "___"){
 #   NULL
 # }
 
+
+is_table_format <- function(format){
+  format %in% c("csv", "tsv", "txt", "json")
+}
+
+
+

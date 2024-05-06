@@ -1,5 +1,9 @@
 test_that("Test tabular", {
 
+  # file
+  path <- turn_sys("csv/2023-08-03-wifi_gratuito_en_escuelas_normales.csv")
+
+
 
   # Check encodings
   path <- turn_sys("csv/2023-08-03-wifi_gratuito_en_escuelas_normales.csv")

@@ -48,3 +48,10 @@ geo_into_geo <- function(path, to){
   sf::st_write(geo, dsn = to, delete_dsn = TRUE)
   to
 }
+
+
+#' @export
+is_geo_format <- function(format){
+  format %in% c("fgb", "shp", "json", "geojson", "gdb", "gpkg",
+                   "kml", "gmt")
+}

@@ -1,5 +1,5 @@
 
-
+#' @export
 duckdb_con <- function(con = NULL, dbdir = NULL){
   dbdir <- dbdir %||% ":memory:"
   if(duckdb_valid_con(con)){
@@ -9,6 +9,7 @@ duckdb_con <- function(con = NULL, dbdir = NULL){
   con
 }
 
+#' @export
 duckdb_valid_con <- function(con){
   if(is.null(con)) return(FALSE)
   tryCatch({
@@ -19,19 +20,20 @@ duckdb_valid_con <- function(con){
   })
 }
 
+#' @export
 duckdb_disconnect <- function(con){
   duckdb::dbDisconnect(con, shutdown = TRUE)
 }
 
 
-
+#' @export
 duckdb_extensions <- function(con = NULL) {
   query <- "SELECT * FROM duckdb_extensions();"
   DBI::dbGetQuery(con, query)
 }
 
 
-
+#' @export
 duckdb_load_ext <- function(ext, con){
   if(!duckdb_is_installed_ext(ext, con)){
     duckdb_install_ext(ext, con)
@@ -41,12 +43,14 @@ duckdb_load_ext <- function(ext, con){
   }
 }
 
+#' @export
 duckdb_install_ext <- function(ext, con){
   if(!duckdb_is_loaded_ext(ext, con)){
     DBI::dbExecute(con, glue::glue("INSTALL {ext};"))
   }
 }
 
+#' @export
 duckdb_is_loaded_ext <- function(ext, con){
   exts <- duckdb_extensions(con) |>
     filter(extension_name == ext) |>
@@ -55,6 +59,7 @@ duckdb_is_loaded_ext <- function(ext, con){
   exts
 }
 
+#' @export
 duckdb_is_installed_ext <- function(ext, con){
   exts <- duckdb_extensions(con) |>
     filter(extension_name == ext) |>

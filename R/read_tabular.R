@@ -1,4 +1,5 @@
 
+#' @export
 read_tabular <- function(path, ...){
 
   ext <- turn::which_ext(path)
